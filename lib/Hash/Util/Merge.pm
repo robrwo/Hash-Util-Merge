@@ -18,7 +18,7 @@ our $VERSION = 'v0.1.1';
   my %a = ( x => 1, y => 2 );
   my %b = ( x => 3, y => 7 );
 
-  my $c = mergemap { $a + $b ) \%a, \%b;
+  my $c = mergemap { ( $a + $b ) } \%a, \%b;
 
   # %c = ( x => 4, y => 9 );
 
