@@ -7,7 +7,7 @@ use warnings;
 
 use Exporter ();
 
-our $VERSION = 'v0.1.0';
+our $VERSION = 'v0.1.1';
 
 # ABSTRACT: utility functions for merging hashes
 
