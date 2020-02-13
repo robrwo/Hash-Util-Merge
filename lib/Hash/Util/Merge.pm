@@ -7,9 +7,7 @@ use Exporter ();
 
 our $VERSION = 'v0.1.0';
 
-=head1 NAME
-
-Hash::Util::Merge - utility functions for merging hashes
+# ABSTRACT: utility functions for merging hashes
 
 =head1 SYNOPSIS
 
