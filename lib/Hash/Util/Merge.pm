@@ -1,6 +1,6 @@
 package Hash::Util::Merge;
 
-use v5.22;
+use v5.10.1;
 use warnings;
 
 use Exporter ();
