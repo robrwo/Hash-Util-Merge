@@ -3,8 +3,6 @@ package Hash::Util::Merge;
 use v5.22;
 use warnings;
 
-use experimental qw/ postderef /;
-
 use Exporter ();
 
 our @EXPORT_OK = qw/ mergemap /;
@@ -34,7 +32,7 @@ sub mergemap(&$$) {
 
     my %r;
 
-    for my $k (keys $x->%*, keys $y->%*) {
+    for my $k (keys %$x, keys %$y) {
         next if exists $r{$k};
         local *$glob_a = \ $x->{$k};
         local *$glob_b = \ $y->{$k};
@@ -45,5 +43,3 @@ sub mergemap(&$$) {
 }
 
 1;
-
-
