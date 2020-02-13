@@ -43,7 +43,7 @@ sub import {
     # works.
 
     my $pkg = caller;
-    no strict 'refs';
+    no strict 'refs'; ## no critic (ProhibitNoStrict)
     ${"${pkg}::a"} = ${"${pkg}::a"};
     ${"${pkg}::b"} = ${"${pkg}::b"};
     goto &Exporter::import;
@@ -62,10 +62,10 @@ C<undef>.
 
 =cut
 
-sub mergemap(&$$) {
+sub mergemap(&$$) { ## no critic (ProhibitSubroutinePrototypes)
 
     my $pkg = caller;
-    no strict 'refs';
+    no strict 'refs'; ## no critic (ProhibitNoStrict)
     my $glob_a = \ *{"${pkg}::a"};
     my $glob_b = \ *{"${pkg}::b"};
 
