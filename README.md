@@ -14,7 +14,7 @@ use Hash::Util::Merge qw/ mergemap /;
 my %a = ( x => 1, y => 2 );
 my %b = ( x => 3, y => 7 );
 
-my $c = mergemap { $a + $b ) \%a, \%b;
+my $c = mergemap { $a + $b } \%a, \%b;
 
 # %c = ( x => 4, y => 9 );
 ```
@@ -72,6 +72,10 @@ This module uses code from [List::Util::PP](https://metacpan.org/pod/List::Util:
 
 This module was developed from work for Science Photo Library
 [https://www.sciencephoto.com](https://www.sciencephoto.com).
+
+# CONTRIBUTOR
+
+Mohammad S Anwar <mohammad.anwar@yahoo.com>
 
 # COPYRIGHT AND LICENSE
 
