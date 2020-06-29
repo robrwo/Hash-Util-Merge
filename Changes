@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Tests]
+  - Removed clean namespace test.
 
 v0.1.1    2020-02-14 08:24:57+00:00 Europe/London
   [Documentation]
