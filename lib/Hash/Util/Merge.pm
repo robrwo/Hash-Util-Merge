@@ -8,7 +8,7 @@ use warnings;
 use Exporter ();
 use Sub::Util 1.40 qw( set_prototype );
 
-our $VERSION = 'v0.1.2';
+our $VERSION = 'v0.1.3';
 
 # ABSTRACT: utility functions for merging hashes
 
