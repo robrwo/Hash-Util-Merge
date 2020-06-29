@@ -6,6 +6,7 @@ use strict;
 use warnings;
 
 use Exporter ();
+use Sub::Util 1.40 qw( set_prototype );
 
 our $VERSION = 'v0.1.2';
 
@@ -62,7 +63,7 @@ C<undef>.
 
 =cut
 
-sub mergemap(&$$) { ## no critic (ProhibitSubroutinePrototypes)
+sub mergemap {
 
     my $pkg = caller;
     no strict 'refs'; ## no critic (ProhibitNoStrict)
@@ -81,6 +82,10 @@ sub mergemap(&$$) { ## no critic (ProhibitSubroutinePrototypes)
     }
 
     return \%r;
+}
+
+BEGIN {
+    set_prototype '&$$' => \&mergemap;
 }
 
 =head1 KNOWN ISSUES

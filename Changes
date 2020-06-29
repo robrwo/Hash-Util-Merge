@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Removed use of syntactic prototype.
+
   [Tests]
   - Removed clean namespace test.
 
