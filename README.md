@@ -4,7 +4,7 @@ Hash::Util::Merge - utility functions for merging hashes
 
 # VERSION
 
-version v0.1.2
+version v0.1.3
 
 # SYNOPSIS
 
