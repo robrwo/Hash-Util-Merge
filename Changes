@@ -6,6 +6,9 @@ Revision history for {{$dist->name}}:
 
   - Fix encoding of links in README.
 
+  [Bug Fixes]
+  - Remove Storable from report-prereqs test.
+
   [Other]
   - Specify minimum version of Exporter.
 
