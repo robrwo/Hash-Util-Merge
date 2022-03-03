@@ -5,7 +5,7 @@ use v5.10.1;
 use strict;
 use warnings;
 
-use Exporter ();
+use Exporter 5.57 ();
 use Sub::Util 1.40 qw( set_prototype );
 
 our $VERSION = 'v0.1.3';
