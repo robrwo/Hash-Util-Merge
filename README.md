@@ -48,7 +48,7 @@ when merged with a hash that has other keys.
 
 # SEE ALSO
 
-[Hash::Merge](https://metacpan.org/pod/Hash::Merge)
+[Hash::Merge](https://metacpan.org/pod/Hash%3A%3AMerge)
 
 # SOURCE
 
@@ -68,7 +68,7 @@ feature.
 
 Robert Rothenberg <rrwo@cpan.org>
 
-This module uses code from [List::Util::PP](https://metacpan.org/pod/List::Util::PP).
+This module uses code from [List::Util::PP](https://metacpan.org/pod/List%3A%3AUtil%3A%3APP).
 
 This module was developed from work for Science Photo Library
 [https://www.sciencephoto.com](https://www.sciencephoto.com).
