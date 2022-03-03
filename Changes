@@ -9,6 +9,8 @@ Revision history for {{$dist->name}}:
   [Other]
   - Specify minimum version of Exporter.
 
+  - Remove bad rule from MANIFEST.SKIP.
+
 v0.1.2    2020-06-29 23:28:49+01:00 Europe/London
   [Enhancements]
   - Removed use of syntactic prototype.
