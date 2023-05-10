@@ -3,7 +3,7 @@
 
 requires "Exporter" => "5.57";
 requires "Sub::Util" => "1.40";
-requires "perl" => "v5.10.1";
+requires "perl" => "v5.14.0";
 requires "strict" => "0";
 requires "warnings" => "0";
 
