@@ -6,7 +6,7 @@ use warnings;
 use Exporter 5.57 ();
 use Sub::Util 1.40 qw( set_prototype );
 
-our $VERSION = 'v0.2.0';
+our $VERSION = 'v0.2.1';
 
 # ABSTRACT: utility functions for merging hashes
 
