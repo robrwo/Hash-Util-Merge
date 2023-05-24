@@ -9,7 +9,7 @@ Revision history for {{$dist->name}}:
 
   - Fix encoding of links in README.
 
-  [Bug Fixes]
+  [Tests]
   - Remove Storable from report-prereqs test.
 
   [Other]
