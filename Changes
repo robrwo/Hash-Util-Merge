@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Updated the internals to use the meta package for manipulating symbols.
 
 v0.2.0    2023-05-24 17:02:55+01:00 Europe/London
   [Incompatible Changes]
