@@ -4,6 +4,9 @@ Revision history for {{$dist->name}}:
   [Enhancements]
   - Updated the internals to use the meta package for manipulating symbols.
 
+  [Tests]
+  - Changed the module used for MANIFEST testing.
+
 v0.2.0    2023-05-24 17:02:55+01:00 Europe/London
   [Incompatible Changes]
   - Bumped minimum version of Perl to v5.14.
