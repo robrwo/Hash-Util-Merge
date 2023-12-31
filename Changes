@@ -1,8 +1,6 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
-  [Enhancements]
-  - Updated the internals to use the meta package for manipulating symbols.
 
   [Tests]
   - Changed the module used for MANIFEST testing.

@@ -2,10 +2,8 @@ package Hash::Util::Merge;
 
 use v5.14;
 use warnings;
-use meta;
 
 use Exporter 5.57 ();
-
 use Sub::Util 1.40 qw( set_prototype );
 
 our $VERSION = 'v0.2.1';
@@ -44,9 +42,9 @@ sub import {
     # works.
 
     my $pkg = caller;
-    my $meta = meta::get_package($pkg);
-    $meta->add_symbol( '$a', \my $a ) unless $meta->can_symbol('$a');
-    $meta->add_symbol( '$b', \my $b ) unless $meta->can_symbol('$b');
+    no strict 'refs'; ## no critic (ProhibitNoStrict)
+    ${"${pkg}::a"} = ${"${pkg}::a"};
+    ${"${pkg}::b"} = ${"${pkg}::b"};
     goto &Exporter::import;
 }
 
