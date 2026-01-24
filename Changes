@@ -4,8 +4,21 @@ Revision history for {{$dist->name}}:
   [Documentation]
   - Updated copyright year.
 
+  - README.md is buillt using Dist::Zilla UsefulReadme plugin.
+
+  - Replaced INSTALL with section in README.md.
+
+  - Added a LICENSE and SECURITY.md to the distribution.
+
   [Tests]
   - Changed the module used for MANIFEST testing.
+
+  - Moved author/release tests into the xt directory.
+
+  - Added more author tests.
+
+  [Toolchain]
+  - Updated the Dist::Zilla configuration.
 
 v0.2.0    2023-05-24 17:02:55+01:00 Europe/London
   [Incompatible Changes]
