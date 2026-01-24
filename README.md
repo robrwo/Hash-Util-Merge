@@ -26,8 +26,16 @@ Changes for version v0.2.1 (2026-01-24)
 
 - Documentation
     - Updated copyright year.
+    - README.md is buillt using Dist::Zilla UsefulReadme plugin.
+    - Replaced INSTALL with section in README.md.
+    - Added a LICENSE and SECURITY.md to the distribution.
+    - Reorganised POD with a SUPPORT section.
 - Tests
     - Changed the module used for MANIFEST testing.
+    - Moved author/release tests into the xt directory.
+    - Added more author tests.
+- Toolchain
+    - Updated the Dist::Zilla configuration.
 
 See the `Changes` file for more details.
 
@@ -76,7 +84,15 @@ dzil install --install-command="cpan ."
 
 For more information, see [How to install CPAN modules](https://www.cpan.org/modules/INSTALL.html).
 
-# BUGS
+# SUPPORT
+
+Only the latest version of this module will be supported.
+
+This module requires Perl v5.14 or later.
+
+Future releases may only support Perl versions released in the last ten years.
+
+## Reporting Bugs and Submitting Feature Requests
 
 Please report any bugs or feature requests on the bugtracker website
 [https://github.com/robrwo/Hash-Util-Merge/issues](https://github.com/robrwo/Hash-Util-Merge/issues)
@@ -84,6 +100,9 @@ Please report any bugs or feature requests on the bugtracker website
 When submitting a bug or request, please include a test-file or a
 patch to an existing test-file that illustrates the bug or desired
 feature.
+
+If the bug you are reporting has security implications which make it inappropriate to send to a public issue tracker,
+then see `SECURITY.md` for instructions how to report security vulnerabilities.
 
 # SOURCE
 

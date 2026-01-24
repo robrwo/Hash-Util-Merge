@@ -10,6 +10,12 @@ our $VERSION = 'v0.2.1';
 
 # ABSTRACT: utility functions for merging hashes
 
+=begin :prelude
+
+=for stopwords Anwar
+
+=end :prelude
+
 =head1 SYNOPSIS
 
   use Hash::Util::Merge qw/ mergemap /;
@@ -86,16 +92,6 @@ BEGIN {
     set_prototype '&$$' => \&mergemap;
 }
 
-=head1 SUPPORT FOR OLDER PERL VERSIONS
-
-Since v0.2.0, the this module requires Perl v5.14 or later.
-
-Future releases may only support Perl versions released in the last ten years.
-
-If you need this module on Perl v5.10, please use one of the v0.1.x
-versions of this module.  Significant bug or security fixes may be
-backported to those versions.
-
 =head1 KNOWN ISSUES
 
 L<Readonly> hashes, or those with locked keys, may return an error
@@ -104,6 +100,21 @@ when merged with a hash that has other keys.
 =head1 SEE ALSO
 
 L<Hash::Merge>
+
+=head1 prepend:SUPPORT
+
+Only the latest version of this module will be supported.
+
+This module requires Perl v5.14 or later.
+
+Future releases may only support Perl versions released in the last ten years.
+
+=head2 Reporting Bugs and Submitting Feature Requests
+
+=head1 append:SUPPORT
+
+If the bug you are reporting has security implications which make it inappropriate to send to a public issue tracker,
+then see F<SECURITY.md> for instructions how to report security vulnerabilities.
 
 =head1 append:AUTHOR
 

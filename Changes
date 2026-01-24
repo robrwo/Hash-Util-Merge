@@ -10,6 +10,8 @@ Revision history for {{$dist->name}}:
 
   - Added a LICENSE and SECURITY.md to the distribution.
 
+  - Reorganised POD with a SUPPORT section.
+
   [Tests]
   - Changed the module used for MANIFEST testing.
 
