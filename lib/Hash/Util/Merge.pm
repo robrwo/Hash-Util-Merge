@@ -4,7 +4,7 @@ use v5.14;
 use warnings;
 
 use Exporter 5.57 ();
-use Sub::Util 1.40 qw( set_prototype );
+use Sub::Util 1.40 ();
 
 our $VERSION = 'v0.2.1';
 
@@ -89,7 +89,7 @@ sub mergemap {
 }
 
 BEGIN {
-    set_prototype '&$$' => \&mergemap;
+    Sub::Util::set_prototype '&$$' => \&mergemap;
 }
 
 =head1 KNOWN ISSUES
