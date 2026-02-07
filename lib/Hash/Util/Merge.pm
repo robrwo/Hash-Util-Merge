@@ -13,7 +13,7 @@ our $VERSION = 'v0.3.0';
 
 =begin :prelude
 
-=for stopwords Anwar
+=for stopwords Anwar mergemap
 
 =end :prelude
 
