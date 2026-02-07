@@ -40,6 +40,7 @@ Changes for version v0.3.0 (2026-02-07)
     - Changed the module used for MANIFEST testing.
     - Moved author/release tests into the xt directory.
     - Added more author tests.
+    - Switched to Test2::V0.
 - Toolchain
     - Updated the Dist::Zilla configuration.
 
