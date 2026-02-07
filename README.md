@@ -26,6 +26,7 @@ Changes for version v0.2.1 (2026-02-07)
 
 - Enhancements
     - Any number of hashes can be merged.
+    - Duplicate keys are not reprocessed.
 - Bugs
     - Clean namespace.
 - Documentation
@@ -49,7 +50,8 @@ See the `Changes` file for more details.
 This module lists the following modules as runtime dependencies:
 
 - [Exporter](https://metacpan.org/pod/Exporter) version 5.57 or later
-- [Sub::Util](https://metacpan.org/pod/Sub%3A%3AUtil) version 1.40 or later
+- [List::Util](https://metacpan.org/pod/List%3A%3AUtil) version 1.45 or later
+- [Sub::Util](https://metacpan.org/pod/Sub%3A%3AUtil) version 1.45 or later
 - [perl](https://metacpan.org/pod/perl) version v5.14.0 or later
 - [strict](https://metacpan.org/pod/strict)
 - [warnings](https://metacpan.org/pod/warnings)

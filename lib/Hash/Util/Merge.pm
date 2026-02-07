@@ -4,7 +4,8 @@ use v5.14;
 use warnings;
 
 use Exporter 5.57 ();
-use Sub::Util 1.40 ();
+use List::Util 1.45 ();
+use Sub::Util 1.45 ();
 
 our $VERSION = 'v0.2.1';
 
@@ -96,7 +97,7 @@ sub mergemap {
         my $y = shift;
 
         my %r;
-        for my $k ( keys %$x, keys %$y ) {
+        for my $k ( List::Util::uniqstr( keys %$x, keys %$y ) ) {
             next if exists $r{$k};
             local *$glob_a = \$x->{$k};
             local *$glob_b = \$y->{$k};

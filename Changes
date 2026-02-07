@@ -4,6 +4,8 @@ Revision history for {{$dist->name}}:
   [Enhancements]
   - Any number of hashes can be merged.
 
+  - Duplicate keys are not reprocessed.
+
   [Bugs]
   - Clean namespace.
 
