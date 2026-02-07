@@ -24,9 +24,12 @@ hashes with a function.
 
 Changes for version v0.2.1 (2026-02-07)
 
+- Enhancements
+    - Any number of hashes can be merged.
 - Bugs
     - Clean namespace.
 - Documentation
+    - Improved the discussion of the merge function.
     - Updated copyright year.
     - README.md is buillt using Dist::Zilla UsefulReadme plugin.
     - Replaced INSTALL with section in README.md.

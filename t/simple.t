@@ -27,5 +27,31 @@ my %c = ( b => 4 );
     is_deeply $c, { a => $a{a}, b => $c{b} }, 'mergemap (undef)';
 }
 
-done_testing;
+{
+    my $c = mergemap { $a + $b } \%a;
+    is_deeply $c, \%a, 'mergemap (single argument)';
+}
 
+{
+    my $c = mergemap { $a + $b };
+    is_deeply $c, { }, 'mergemap (no argument)';
+}
+
+{
+    my $c = mergemap { $a + $b // 0 } \%a, \%b, { a => 4, b => 7 };
+    is_deeply $c, { a => 15, b => 27 }, 'mergemap (three args)';
+}
+
+{
+    my $c = mergemap { $a + ( $b // 0 ) } \%a, \%b, { a => 4, b => 7 }, { a => 0, %c };
+    is_deeply $c, { a => 15, b => 31 }, 'mergemap (four args)';
+}
+
+{
+    my @list = ( \%a, \%b );
+    my $c    = mergemap { $a + $b } @list;
+    is_deeply $c, { a => 11, b => 20 }, 'mergemap (list)';
+}
+
+
+done_testing;

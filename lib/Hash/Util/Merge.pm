@@ -56,14 +56,28 @@ sub import {
 
 =export mergemap
 
-  $hashref = mergemap { fn($a,$b) } \%a, \%b;
+  $hashref = mergemap { fn($a,$b) } \%a, \%b, \%c ...;
 
-For each key in the hashes C<%a> and C<%b>, this function applies the
-user-supplied function C<fn> to the corresponding values of that key,
-in the resulting hash reference.
+This returns a hash reference whose values are the result of repeatedly applying
+a function to the values from all hashes, for each key.
 
-If a key does not exist in either of the hashes, then it will return
-C<undef>.
+The variables C<$a> and C<$b> refer to the value from the accumulator
+(initialised to the first hash in the list) and the remaining hashes.
+
+For example,
+
+  my %a = ( x => 5, y => 6 );
+  my %b = ( x => 2, y => 1 );
+
+  my $c = mergemap { $a - $b } \%a, \%b;
+
+Returns the hash reference
+
+  ( x => 3, y => 5 );
+
+If the hashes do not have the same set of keys, then C<$a> or C<$b>
+will be C<undef> if the key is missing. (There is no means of
+differentiating between a key that exists vs an C<undef> value.)
 
 =cut
 
@@ -74,22 +88,30 @@ sub mergemap {
     my $glob_a = \ *{"${pkg}::a"};
     my $glob_b = \ *{"${pkg}::b"};
 
-    my ($f, $x, $y) = @_;
+    my $f = shift;
+    my $x = shift // { };
 
-    my %r;
+    while (@_) {
 
-    for my $k (keys %$x, keys %$y) {
-        next if exists $r{$k};
-        local *$glob_a = \ $x->{$k};
-        local *$glob_b = \ $y->{$k};
-        $r{$k} = $f->();
+        my $y = shift;
+
+        my %r;
+        for my $k ( keys %$x, keys %$y ) {
+            next if exists $r{$k};
+            local *$glob_a = \$x->{$k};
+            local *$glob_b = \$y->{$k};
+            $r{$k} = $f->();
+        }
+
+        $x = \%r;
+
     }
 
-    return \%r;
+    return $x;
 }
 
 BEGIN {
-    Sub::Util::set_prototype '&$$' => \&mergemap;
+    Sub::Util::set_prototype '&@' => \&mergemap;
 }
 
 =head1 KNOWN ISSUES

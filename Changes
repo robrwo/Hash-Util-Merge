@@ -1,10 +1,15 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Any number of hashes can be merged.
+
   [Bugs]
   - Clean namespace.
 
   [Documentation]
+  - Improved the discussion of the merge function.
+
   - Updated copyright year.
 
   - README.md is buillt using Dist::Zilla UsefulReadme plugin.
