@@ -29,6 +29,8 @@ Revision history for {{$dist->name}}:
 
   - Added more author tests.
 
+  - Switched to Test2::V0.
+
   [Toolchain]
   - Updated the Dist::Zilla configuration.
 

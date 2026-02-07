@@ -16,9 +16,8 @@ on 'build' => sub {
 on 'test' => sub {
   requires "File::Spec" => "0";
   requires "Module::Metadata" => "1.000015";
+  requires "Test2::V0" => "0";
   requires "Test::More" => "0";
-  requires "Test::Most" => "0";
-  requires "Test::Warnings" => "0";
 };
 
 on 'test' => sub {
