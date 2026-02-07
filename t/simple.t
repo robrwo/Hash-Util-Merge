@@ -1,7 +1,7 @@
 use Test::Most;
 use Test::Warnings;
 
-use Hash::Util::Merge qw/ mergemap /;
+use Hash::Util::Merge v0.3.0 qw/ mergemap /;
 
 my %a = ( a => 10, b => 15 );
 my %b = ( a => 1,  b => 5 );
