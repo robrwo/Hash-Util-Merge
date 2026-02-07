@@ -7,7 +7,7 @@ use Exporter 5.57 ();
 use List::Util 1.45 ();
 use Sub::Util 1.45 ();
 
-our $VERSION = 'v0.2.1';
+our $VERSION = 'v0.3.0';
 
 # ABSTRACT: utility functions for merging hashes
 

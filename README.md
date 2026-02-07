@@ -22,7 +22,7 @@ hashes with a function.
 
 # RECENT CHANGES
 
-Changes for version v0.2.1 (2026-02-07)
+Changes for version v0.3.0 (2026-02-07)
 
 - Enhancements
     - Any number of hashes can be merged.
