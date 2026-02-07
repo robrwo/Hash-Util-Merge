@@ -22,8 +22,10 @@ hashes with a function.
 
 # RECENT CHANGES
 
-Changes for version v0.2.1 (2026-01-24)
+Changes for version v0.2.1 (2026-02-07)
 
+- Bugs
+    - Clean namespace.
 - Documentation
     - Updated copyright year.
     - README.md is buillt using Dist::Zilla UsefulReadme plugin.
@@ -106,8 +108,8 @@ then see `SECURITY.md` for instructions how to report security vulnerabilities.
 
 # SOURCE
 
-The development version is on github at ["robrwo/Hash-Util-Merge" in github.com](https://metacpan.org/pod/github.com#robrwo-Hash-Util-Merge)
-and may be cloned from ["robrwo/Hash-Util-Merge.git" in github.com](https://metacpan.org/pod/github.com#robrwo-Hash-Util-Merge.git)
+The development version is on github at [https://github.com/robrwo/Hash-Util-Merge](https://github.com/robrwo/Hash-Util-Merge)
+and may be cloned from [git://github.com/robrwo/Hash-Util-Merge.git](git://github.com/robrwo/Hash-Util-Merge.git)
 
 # AUTHOR
 
